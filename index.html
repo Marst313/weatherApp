@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script/script.js"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body class="bg-no-repeat bg-cover bg-center" style="background-image: url('public/img/bg/night.jpg')">
+    <section class="weekly">
+      <div class="container">
+        <div class="w-11/12 lg:w-4/5 shadow-xl bg-primary/60 flex flex-row-reverse justify-center text-white mt-10 mx-auto items-center font-bold weekly-container overflow-auto">
+          <!-- place for day and temp -->
+        </div>
+      </div>
+    </section>
+
+    <section class="position mt-24">
+      <div class="container">
+        <div class="w-11/12 md:w-3/5 lg:1/2 xl:w-2/5 shadow-xl items-center mx-auto bg-primary rounded-md flex justify-center p-2 text-white">
+          <h1 class="text-4xl mr-2 current-temperature"></h1>
+          <div class="flex flex-col m-1">
+            <h2 class="text-md font-semibold current-position">
+              <!-- Insert current position -->
+            </h2>
+            <h3 class="text-sm date-full font-semibold"></h3>
+          </div>
+
+          <div class="flex flex-col ml-2 justify-center items-center">
+            <!-- <img src="public/img/icon/rain.png" alt="" /> -->
+
+            <h3 class="text-sm rain-icon font-semibold"></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail mt-28 mb-52">
+      <div class="container">
+        <div class="w-11/12 mx-auto bg-primary/60 text-white">
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="mt-5 text-xl font-bold">Weather Detail</h1>
+            <h2 class="mt-1">Wind <span class="wind-speed"></span> km/h</h2>
+
+            <div class="w-full max-w-md date-hours flex flex-row-reverse overflow-auto p-1">
+              <!-- Current condition per hours -->
+            </div>
+            <h3 class="text-center mb-5 mt-5 p-5 font-semibold text-xl description-condition">Similar temperatures continuing with a chance of rain multiple days.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
